@@ -1,0 +1,26 @@
+﻿{
+  "Name": "input-sensor-reference",
+  "Type": "Reference data",
+  "DataSourceType": "SQL Database",
+  "SqlReferenceProperties": {
+    "Database": "iot-dev-sql-core",
+    "Server": "iot-dev-sqld-core.database.windows.net",
+    "User": "TestTable1Login1",
+    "Password": null,
+    "FullSnapshotPath": "input-sensor-reference.snapshot.sql",
+    "RefreshType": "Execute periodically",
+    "RefreshRate": "00.00:05:00",
+    "DeltaSnapshotPath": null
+  },
+  "DataSourceCredentialDomain": "2fe29044-15f6-4931-8d93-3a0507b643e5.StreamAnalystics",
+  "Serialization": {
+    "Type": "Csv",
+    "Encoding": "UTF8",
+    "FieldDelimiter": ",",
+    "Format": null
+  },
+  "PartitionKey": null,
+  "CompressionType": null,
+  "Sample": null,
+  "ScriptType": "Input"
+}

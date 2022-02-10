@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E6C563F2-BDC2-4A24-ACBF-01715157DCBB}") = "dev-sa-theOldVinylFactory", "dev-sa-theOldVinylFactory\dev-sa-theOldVinylFactory.asaproj", "{4C00F4C8-E9B4-4D8C-AAA0-C85E6A6D64B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C00F4C8-E9B4-4D8C-AAA0-C85E6A6D64B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C00F4C8-E9B4-4D8C-AAA0-C85E6A6D64B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C00F4C8-E9B4-4D8C-AAA0-C85E6A6D64B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C00F4C8-E9B4-4D8C-AAA0-C85E6A6D64B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFC3FD14-2862-4D9B-A77B-CABCD6A527CB}
+	EndGlobalSection
+EndGlobal

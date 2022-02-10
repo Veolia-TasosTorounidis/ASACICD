@@ -1,0 +1,131 @@
+﻿/*
+WITH [MessageInputWeblog] AS -- Map Weblog Reading types
+(
+SELECT
+    *,/*,
+    CASE [Event].[reading].[readingType]
+        when 'Volume' then 'Volume m^3'
+        when 'Volume flow' then 'Volume Flow m^3'
+        when 'Temperature difference' then 'Delta T'
+        when 'Flow temperature' then 'Flow Temperature'
+        when 'Return temperature' then 'Return Temperature'
+        else [Event].[reading].[readingType]
+    END AS [sensorType]*/
+'Delta T' as [sensorType]
+FROM    [input-iot-hub-weblog] AS [Event] 
+CROSS APPLY getarrayelements(Event.Measurements) as ArrayElement
+where [Event].[IoTHub].[ConnectionDeviceId] = 'iot-hale-village-test'
+),
+*/
+with [MessageInput] AS -- Handle episensor gateway events
+(
+
+SELECT
+    CONCAT([NodeProperty].[PropertyName],'_',[SensorProperty].[PropertyName]) AS [PK], --Primary key (NodeID_SensorID)
+    [Event].[timestamp] AS [sensorTimeStamp], --Epoch timestamp used for Row Key
+    DATEADD(second, [Event].[timestamp], '1970-01-01T00:00:00Z') AS [DateTimeStamp],
+    [Event].[gateway] AS [gatewayId],
+    [Event].[IoTHub].[ConnectionDeviceId] AS [gatewayName],
+    [NodeProperty].[PropertyName] AS [nodeId],
+    [SensorProperty].[PropertyName] AS [sensorId],
+    [SensorProperty].[PropertyValue] AS [sensorValue]
+FROM
+    [input-iot-hub] AS [Event] -- Access top level JSON with event info
+    CROSS APPLY GetRecordProperties([Event].[values]) AS [NodeProperty] -- Access second level of JSON with node info
+    CROSS APPLY GetRecordProperties([NodeProperty].[propertyValue]) AS [SensorProperty] -- Access third level of JSON with sensor info
+where substring([Event].[IoTHub].[ConnectionDeviceId],1,9 ) = 'episensor'
+
+/*UNION
+
+SELECT
+
+    CONCAT([WebEvent].[reading].[identifier],'_',[SensorProperties].[Sensorid]) AS [PK], --Primary key (NodeID_SensorID)
+    DATEDIFF(s, '1970-01-01T00:00:00.000Z',[WebEvent].[timestamp]) AS [sensorTimeStamp], --Epoch timestamp used for Row Key
+    [WebEvent].[timestamp] AS [DateTimeStamp],
+    [WebEvent].[gateway] AS [gatewayId], 
+    [WebEvent].[IoTHub].[ConnectionDeviceId] AS [gatewayName], 
+    [WebEvent].[reading].[identifier] AS [nodeId], 
+    [SensorProperties].[SensorId] AS [sensorId],
+    [WebEvent].[reading].[readingValue] AS [sensorValue]
+
+FROM 
+    [MessageInputWeblog] AS [WebEvent]
+    LEFT JOIN [input-sensor-reference] AS [SensorProperties] ON [SensorProperties].[SensorType] = [WebEvent].[sensorType]
+*/
+),
+
+[OutputZPC] AS -- 'OutputZPC: ZPC data only linked to sensor/address reference
+(
+SELECT
+    [MI].[PK],
+    [MI].[SensorTimeStamp],
+    [MI].[DateTimeStamp],
+    [MI].[GatewayId],
+    [MI].[GatewayName],
+    [MI].[NodeId],
+    [MI].[SensorId],
+    [MI].[SensorValue],
+    [SR].[NodeType],
+    [SR].[SensorType],
+    [SR].[SensorUnit],
+    [SR].[PulseOutput],
+    [AR_ZPC].[FlatNo],
+    [AR_ZPC].[Floor], 
+    [AR_ZPC].[Block],
+    [AR_ZPC].[StreetName],
+    [AR_ZPC].[Postcode],
+    [AR_ZPC].[WaterMeterNo],
+    [AR_ZPC].[SensusSerialNo],
+    [AR_ZPC].[ZPCModel]
+FROM -- Address data linked through nodeid and pulse output as one node can have two addresses
+    [MessageInput] AS [MI] 
+    LEFT JOIN [input-sensor-reference] AS [SR] ON [MI].[SensorId] = [SR].[SensorId]
+    LEFT JOIN [input-address-reference-zpc] AS [AR_ZPC] ON CONCAT([MI].[NodeId],'_',[SR].[PulseOutput]) = CONCAT([AR_ZPC].[NodeId],'_',[AR_ZPC].[PulseOutput])
+WHERE
+    [SR].[NodeType] = 'ZPC' -- ZPC data only
+),
+
+[OutputZHM] AS -- 'OutputZHM: ZHM data only linked to sensor/address reference
+(
+SELECT
+    [MI].[PK],
+    [MI].[SensorTimeStamp],
+    [MI].[DateTimeStamp],
+    [MI].[GatewayId],
+    [MI].[GatewayName],
+    [MI].[NodeId],
+    [MI].[SensorId],
+    [MI].[SensorValue],
+    [SR].[NodeType],
+    [SR].[SensorType],
+    [SR].[SensorUnit],
+    [SR].[PulseOutput],
+    [AR_ZHM].[FlatNo],
+    [AR_ZHM].[Floor], 
+    [AR_ZHM].[Block],
+    [AR_ZHM].[StreetName],
+    [AR_ZHM].[Postcode],
+    [AR_ZHM].[LGMeterSerialNo]
+FROM
+    [MessageInput] AS [MI]
+    LEFT JOIN [input-sensor-reference] AS [SR] ON [MI].[SensorId] = [SR].[SensorId]
+    LEFT JOIN [input-address-reference-zhm] AS [AR_ZHM] ON [MI].[nodeId] = [AR_ZHM].[NodeId]
+WHERE
+    [SR].[NodeType] = 'ZHM'
+)
+
+select
+    'ZHM' as PK,
+    *
+INTO
+    [dev-cosmosdb1]
+from
+    [OutputZHM]
+
+select
+     'ZHP' as PK,
+    *
+INTO
+    [dev-cosmosdb2]
+from
+    [OutputZPC]

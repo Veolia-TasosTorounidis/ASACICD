@@ -1,0 +1,29 @@
+﻿{
+  "ScriptType": "JobConfig",
+  "DataLocale": "en-GB",
+  "OutputErrorPolicy": "Retry",
+  "EventsLateArrivalMaxDelayInSeconds": 5,
+  "EventsOutOfOrderMaxDelayInSeconds": 0,
+  "EventsOutOfOrderPolicy": "Adjust",
+  "StreamingUnits": 1,
+  "CompatibilityLevel": "1.2",
+  "UseSystemAssignedIdentity": false,
+  "GlobalStorage": {
+    "AccountName": "iotdevstrgiotstorage",
+    "AccountKey": null,
+    "AuthenticationMode": "ConnectionString"
+  },
+  "CustomCodeStorage": {
+    "AccountName": "iotdevstrgiotstorage",
+    "AccountKey": null,
+    "ContainerName": "azure-webjobs-hosts",
+    "Path": "UserCustomCode.zip"
+  },
+  "ContentStoragePolicy": "SystemAccount",
+  "UploadFromLocal": false,
+  "DataSourceCredentialDomain": "866f0afe-7874-4885-a1e1-0978504cc541.StreamAnalystics",
+  "Tags": {
+    "ENV": "Dev",
+    "Creator": "tasos.torounidis@veolia.com"
+  }
+}

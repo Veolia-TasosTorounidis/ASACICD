@@ -1,0 +1,14 @@
+﻿{
+  "Name": "dev-cosmosdb1",
+  "DataSourceType": "DocumentDB",
+  "DocumentDbProperties": {
+    "AccountId": "dev-cdb-dataplatform",
+    "AccountKey": null,
+    "Database": "UKI",
+    "ContainerName": "pre_iot_hale_village_the_old_vinyl",
+    "DocumentId": "",
+    "PartitionKey": ""
+  },
+  "DataSourceCredentialDomain": null,
+  "ScriptType": "Output"
+}

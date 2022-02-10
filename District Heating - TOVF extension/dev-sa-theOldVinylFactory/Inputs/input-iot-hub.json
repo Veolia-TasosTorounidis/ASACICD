@@ -1,0 +1,23 @@
+﻿{
+  "Name": "input-iot-hub",
+  "Type": "Data Stream",
+  "DataSourceType": "IoT Hub",
+  "IoTHubProperties": {
+    "IotHubNamespace": "prd-iothub-iot-hale-village",
+    "EndPoint": "messages/events",
+    "SharedAccessPolicyName": "iothubowner",
+    "SharedAccessPolicyKey": null,
+    "ConsumerGroupName": "$Default"
+  },
+  "DataSourceCredentialDomain": "3a9bb106-76d2-4a8f-b47f-377d67c2b5e6.StreamAnalystics",
+  "Serialization": {
+    "Type": "Json",
+    "Encoding": "UTF8",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "PartitionKey": null,
+  "CompressionType": "None",
+  "Sample": "{\"gateway\":\"000D6F000DA7FD50\",\"timestamp\":1643725800,\"values\":{\"000D6F000D95A3CA\":{\"370\":\"1.097719E7\"}}}",
+  "ScriptType": "Input"
+}

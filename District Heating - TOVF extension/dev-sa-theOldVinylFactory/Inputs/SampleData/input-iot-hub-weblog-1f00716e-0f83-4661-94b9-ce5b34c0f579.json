@@ -1,0 +1,1108 @@
+﻿[{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770740",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1470,000000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "107,020000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,001000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "56,380000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "44,990000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "11,390000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772210",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "3309,000000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "141,000000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,003000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "53,670000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "47,480000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "6,190000",
+      "measureDateTime": "2022-02-01 13:00:02"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770740",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1470,000000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "107,020000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,001000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "56,380000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "44,990000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "11,390000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772310",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2082,000000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "145,890000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "54,150000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "35,200000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "18,950000",
+      "measureDateTime": "2022-02-01 13:02:32"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770740",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1470,000000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "107,020000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,001000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "56,380000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "44,990000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "11,390000",
+      "measureDateTime": "2022-02-01 13:02:36"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71771120",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2224,000000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "218,650000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,010000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "58,720000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "55,730000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "2,990000",
+      "measureDateTime": "2022-02-01 13:02:34"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702760",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2231,000000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "188,050000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,008000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "55,180000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,010000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "3,170000",
+      "measureDateTime": "2022-02-01 13:02:41"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772070",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "3651,000000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "183,450000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,004000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "59,090000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,900000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "6,190000",
+      "measureDateTime": "2022-02-01 13:02:43"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702770",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2097,000000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "104,950000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,004000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "51,230000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "43,800000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "7,430000",
+      "measureDateTime": "2022-02-01 13:02:47"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71703260",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "3843,000000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "186,330000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,041000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "70,030000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "39,750000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "30,280000",
+      "measureDateTime": "2022-02-01 13:02:39"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702270",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2602,000000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "169,200000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "17,910000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "17,800000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "0,110000",
+      "measureDateTime": "2022-02-01 13:02:45"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772271",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2156,000000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "151,140000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,008000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "55,970000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,410000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "3,560000",
+      "measureDateTime": "2022-02-01 13:03:16"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702281",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "3360,000000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "213,520000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,009000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "56,540000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,650000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "3,890000",
+      "measureDateTime": "2022-02-01 13:03:21"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702280",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "3740,000000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "167,410000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,003000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "60,790000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,010000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "8,780000",
+      "measureDateTime": "2022-02-01 13:02:50"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71703281",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1913,000000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "89,470000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "54,480000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "43,760000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "10,720000",
+      "measureDateTime": "2022-02-01 13:03:24"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770381",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "5715,000000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "227,810000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "60,770000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "26,380000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "34,390000",
+      "measureDateTime": "2022-02-01 13:03:26"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702271",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4178,000000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "233,110000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,008000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "57,090000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,990000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "4,100000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702796",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4653,000000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "178,520000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "54,210000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "38,970000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "15,240000",
+      "measureDateTime": "2022-02-01 13:05:53"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772681",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4321,000000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "193,610000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "48,180000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "22,170000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "26,010000",
+      "measureDateTime": "2022-02-01 13:03:28"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71771202",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "2800,000000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "202,130000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,009000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "54,450000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "50,790000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "3,660000",
+      "measureDateTime": "2022-02-01 13:03:32"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71702271",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4178,000000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "233,110000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,008000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "57,090000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,990000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "4,100000",
+      "measureDateTime": "2022-02-01 13:03:14"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770980",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1867,000000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "127,120000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,004000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "59,260000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "51,280000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "7,980000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770791",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4029,000000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "189,190000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,190000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "63,460000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,830000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "10,630000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71771201",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "5625,000000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "179,550000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,000000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,650000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "43,650000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "9,000000",
+      "measureDateTime": "2022-02-01 13:03:01"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71772207",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4312,000000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "197,840000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,010000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "58,380000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "19,410000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "38,970000",
+      "measureDateTime": "2022-02-01 13:05:55"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770980",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "1867,000000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "127,120000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,004000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "59,260000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "51,280000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "7,980000",
+      "measureDateTime": "2022-02-01 13:02:57"
+    }
+  ]
+},{
+  "gateway": "Halewharf_Block_A",
+  "deviceId": "71770791",
+  "measurements": [
+    {
+      "key": "energy",
+      "unitOfMeasure": "kWh",
+      "value": "4029,000000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "volume",
+      "unitOfMeasure": "m^3",
+      "value": "189,190000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "volumeFlow",
+      "unitOfMeasure": "m^3/h",
+      "value": "0,190000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "flowTemperature",
+      "unitOfMeasure": "C",
+      "value": "63,460000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "returnTemperature",
+      "unitOfMeasure": "C",
+      "value": "52,830000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    },
+    {
+      "key": "temperatureDifference",
+      "unitOfMeasure": "K",
+      "value": "10,630000",
+      "measureDateTime": "2022-02-01 13:03:30"
+    }
+  ]
+}]
