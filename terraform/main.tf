@@ -30,57 +30,57 @@ resource "azurerm_resource_group_template_deployment" "azure_stream_analytics" {
 
     StreamAnalyticsJobName = { value = "ASACICD" }
 
-    Location= { value= var.location }
+    Location = { value = var.location }
 
-    OutputStartMode= { value= "JobStartTime" }
+    OutputStartMode = { value = "JobStartTime" }
 
-    OutputStartTime = { value= "2019-01-01T00:00:00Z" }
+    OutputStartTime = { value = "2019-01-01T00:00:00Z" }
 
-    DataLocale= {value= "en-GB"    }
+    DataLocale = { value = "en-GB" }
 
-    OutputErrorPolicy : { "value": "Drop" }
+    OutputErrorPolicy : { "value" : "Drop" }
 
-    EventsLateArrivalMaxDelayInSeconds= {value= 5}
+    EventsLateArrivalMaxDelayInSeconds = { value = 5 }
 
-    EventsOutOfOrderMaxDelayInSeconds= {value= 0}
+    EventsOutOfOrderMaxDelayInSeconds = { value = 0 }
 
-    EventsOutOfOrderPolicy= {value="Adjust"}
+    EventsOutOfOrderPolicy = { value = "Adjust" }
 
-    StreamingUnits= {value= 1}
+    StreamingUnits = { value = 1 }
 
-    CompatibilityLevel= {value= "1.2"}
+    CompatibilityLevel = { value = "1.2" }
 
-    TagValues= { value= {"ENV": "Dev", "Created By": "tasos"}}
+    TagValues = { value = { "ENV" : "Dev", "Created By" : "tasos" } }
 
-    ContentStoragePolicy= {value= "SystemAccount"},
+    ContentStoragePolicy = { value = "SystemAccount" },
 
-    JobStorageAccountName= {value= "iotstrggithub"}
-    
-    JobStorageAccountKey= {value= data.azurerm_storage_account.jobstorage.primary_connection_string},
+    JobStorageAccountName = { value = "iotstrggithub" }
 
-    JobStorageAuthMode= {value= "ConnectionString"}
+    JobStorageAccountKey = { value = data.azurerm_storage_account.jobstorage.primary_connection_string },
 
-    Input_Input_iotHubNamespace= {value= "iot-dev-ioth-terraformTestingIoTHub"}
+    JobStorageAuthMode = { value = "ConnectionString" }
 
-    Input_Input_consumerGroupName= {value="$Default"}
+    Input_Input_iotHubNamespace = { value = "iot-dev-ioth-terraformTestingIoTHub" }
 
-    Input_Input_endpoint= {value= "messages/events"}
+    Input_Input_consumerGroupName = { value = "$Default" }
 
-    Input_Input_sharedAccessPolicyName= {value= "iothubowner"}
+    Input_Input_endpoint = { value = "messages/events" }
 
-    Input_Input_sharedAccessPolicyKey= {value= data.azurerm_iothub_shared_access_policy.iothubinput.primary_key}
-    
-    Output_Output_accountId= {value= "iot-dev-cdb-core"}
+    Input_Input_sharedAccessPolicyName = { value = "iothubowner" }
 
-    Output_Output_accountKey= {value= data.azurerm_cosmosdb_account.cosdb.primary_master_key}
+    Input_Input_sharedAccessPolicyKey = { value = data.azurerm_iothub_shared_access_policy.iothubinput.primary_key }
 
-    Output_Output_database= {value= "database1"}
+    Output_Output_accountId = { value = "iot-dev-cdb-core" }
 
-    Output_Output_collectionNamePattern= {value= "terraformtesting"}
+    Output_Output_accountKey = { value = data.azurerm_cosmosdb_account.cosdb.primary_master_key }
 
-    Output_Output_partitionKey= {value= ""}
-     
+    Output_Output_database = { value = "database1" }
+
+    Output_Output_collectionNamePattern = { value = "terraformtesting" }
+
+    Output_Output_partitionKey = { value = "" }
+
   })
-  
+
   template_content = file("${path.module}/ASACICD/ASACICD.JobTemplate.json")
 }
