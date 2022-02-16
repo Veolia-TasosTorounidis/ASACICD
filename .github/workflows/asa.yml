@@ -25,7 +25,7 @@ jobs:
 
 # Build
         - name: Build ASA Job
-          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj -OutputPath ./ASACICD
+          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj -OutputPath ./ASACICD/SAJobTemplate.json
 
 
   terraform:
