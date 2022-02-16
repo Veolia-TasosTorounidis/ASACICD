@@ -40,12 +40,15 @@ jobs:
 # Use the Bash shell by default
     defaults:
       run:
+        working-directory: ./terraform
         shell: bash
+
 
     steps:
 # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
+
 
 # Setup Terraform
     - name: Setup Terraform
