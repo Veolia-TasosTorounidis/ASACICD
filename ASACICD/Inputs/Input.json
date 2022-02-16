@@ -1,0 +1,23 @@
+﻿{
+  "Name": "Input",
+  "Type": "Data Stream",
+  "DataSourceType": "IoT Hub",
+  "IoTHubProperties": {
+    "IotHubNamespace": "iot-dev-ioth-terraformTestingIoTHub",
+    "EndPoint": "messages/events",
+    "SharedAccessPolicyName": "iothubowner",
+    "SharedAccessPolicyKey": null,
+    "ConsumerGroupName": "$Default"
+  },
+  "DataSourceCredentialDomain": "4918482c-4de3-4cdd-a4e5-387fe4cfa760.StreamAnalystics",
+  "Serialization": {
+    "Type": "Json",
+    "Encoding": "UTF8",
+    "FieldDelimiter": null,
+    "Format": null
+  },
+  "PartitionKey": null,
+  "CompressionType": "None",
+  "Sample": null,
+  "ScriptType": "Input"
+}

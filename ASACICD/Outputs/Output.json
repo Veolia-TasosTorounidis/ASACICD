@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Output",
+  "DataSourceType": "DocumentDB",
+  "DocumentDbProperties": {
+    "AccountId": "iot-dev-cdb-core",
+    "AccountKey": null,
+    "Database": "database1",
+    "ContainerName": "terraformtesting",
+    "DocumentId": null,
+    "PartitionKey": ""
+  },
+  "DataSourceCredentialDomain": "39218635-364d-40bb-b3fd-b8ea39bdaea0.StreamAnalystics",
+  "ScriptType": "Output"
+}

@@ -1,0 +1,29 @@
+﻿{
+  "ScriptType": "JobConfig",
+  "DataLocale": "en-GB",
+  "OutputErrorPolicy": "Drop",
+  "EventsLateArrivalMaxDelayInSeconds": 5,
+  "EventsOutOfOrderMaxDelayInSeconds": 0,
+  "EventsOutOfOrderPolicy": "Adjust",
+  "StreamingUnits": 1,
+  "CompatibilityLevel": "1.2",
+  "UseSystemAssignedIdentity": false,
+  "GlobalStorage": {
+    "AccountName": "iotstrggithub",
+    "AccountKey": null,
+    "AuthenticationMode": "ConnectionString"
+  },
+  "CustomCodeStorage": {
+    "AccountName": null,
+    "AccountKey": null,
+    "ContainerName": null,
+    "Path": "UserCustomCode.zip"
+  },
+  "ContentStoragePolicy": "SystemAccount",
+  "UploadFromLocal": true,
+  "DataSourceCredentialDomain": "80553082-46fe-452d-9330-5ef46dbb0a76.StreamAnalystics",
+  "Tags": {
+    "ENV": "Dev",
+    "Created By": "tasos"
+  }
+}
