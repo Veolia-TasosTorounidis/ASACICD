@@ -11,7 +11,7 @@ data "azurerm_storage_account" "jobstorage" {
 
 data "azurerm_iothub_shared_access_policy" "iothubinput" {
   name                = "iothubowner"
-  resource_group_name = "iot-dev-rg-core"
+  resource_group_name = "iot-dev-rg-terraformTesting"
   iothub_name         = "iot-dev-ioth-terraformTestingIoTHub"
 }
 
@@ -82,5 +82,5 @@ resource "azurerm_resource_group_template_deployment" "azure_stream_analytics" {
 
   })
 
-  template_content = file("${path.root}/ASACICD/SAJobTemplate.json")
+  template_content = file("../ASACICD/SAJobTemplate.json")
 }
