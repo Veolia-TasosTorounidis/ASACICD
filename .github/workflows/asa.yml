@@ -33,6 +33,7 @@ jobs:
 
   terraform:
     name: 'Terraform'
+    needs: SAbuild
     runs-on: ubuntu-latest
     env:
         ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
