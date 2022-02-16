@@ -24,8 +24,8 @@ jobs:
           run: sudo npm install -g azure-streamanalytics-cicd --unsafe-perm=true --allow-root
 
 # Build
-        - name: Run ASA Tests
-          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj
+        - name: Build ASA Job
+          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj -OutputPath ./ASACICD
 
 
   terraform:
