@@ -65,9 +65,6 @@ jobs:
 # Initializes the Terraform working directory
     - name: Terraform Init
       run: terraform init
-      
-    - name: Print LS
-      run: cd ..; ls
 
 # Generates an execution plan for Terraform
     - name: Terraform Plan
