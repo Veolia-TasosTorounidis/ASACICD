@@ -98,8 +98,9 @@ jobs:
       run: terraform apply -auto-approve
 
     - name: Upload SA ARM template to Azure
-    - uses: fixpoint/azblob-upload-artifact@v4
+      uses: fixpoint/azblob-upload-artifact@v4
       with:
         connection-string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
         name: sajobbuild
         path: ./terraform/build
+
