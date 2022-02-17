@@ -66,7 +66,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: SAJobTemplate.json
-        path: ./build
+        path: /build
 
 # Setup Terraform
     - name: Setup Terraform
@@ -84,7 +84,7 @@ jobs:
       run: ls
 
     - name: Print CD ./build LS
-      run: cd ./build; ls
+      run: cd /build; ls
 
     - name: Print CD.. ./ASACICD LS
       run: cd ..; cd ./ASACICD; ls
