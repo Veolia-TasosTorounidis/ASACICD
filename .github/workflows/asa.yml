@@ -66,11 +66,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: SAJobTemplate.json
-        path: ../build
+        path: ./build
 
     - name: Display structure of downloaded files
       run: ls -R
-      working-directory: ../build
+      working-directory: ./build
 
 # Setup Terraform
     - name: Setup Terraform
@@ -86,6 +86,9 @@ jobs:
 
     - name: Print current directory
       run: pwd
+
+    - name: Print CD.. 2  LS
+      run: cd ..; cd ..; ls
 
     - name: Print CD..  LS
       run: cd ..; cd ..; ls
