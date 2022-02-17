@@ -25,7 +25,7 @@ jobs:
 
 # Build
         - name: Build ASA Job
-          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj -OutputPath ./ASACICD/SAJobTemplate.json
+          run: sudo azure-streamanalytics-cicd build -project ASACICD/ASACICD.asaproj -OutputPath ./ASACICD/build
 
         - name: Print LS
           run: cd ./ASACICD; ls
@@ -34,7 +34,7 @@ jobs:
           uses: actions/upload-artifact@v2
           with:
            name: SAJobTemplate.json
-           path: ./ASACICD/SAJobTemplate.json
+           path: ./ASACICD/build
            if-no-files-found: error
 
 
@@ -66,11 +66,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: SAJobTemplate.json
-        path: ./build
+        path: ../build
 
     - name: Display structure of downloaded files
       run: ls -R
-      working-directory: ./build
+      working-directory: ../build
 
 # Setup Terraform
     - name: Setup Terraform
@@ -87,8 +87,8 @@ jobs:
     - name: Print current directory
       run: pwd
 
-    - name: Print CD.. ./ASACICD LS
-      run: cd ..; cd ./ASACICD; ls
+    - name: Print CD..  LS
+      run: cd ..; ls
 
 # Generates an execution plan for Terraform
     - name: Terraform Plan

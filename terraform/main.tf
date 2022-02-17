@@ -82,5 +82,5 @@ resource "azurerm_resource_group_template_deployment" "azure_stream_analytics" {
 
   })
 
-  template_content = file("./ASACICD/ASACICD/build/SAJobTemplate.json")
+  template_content = file("./ASACICD/ASACICD/build/ASACICD.JobTemplate.json")
 }
