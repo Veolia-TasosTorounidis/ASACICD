@@ -30,6 +30,15 @@ jobs:
         - name: Print LS
           run: cd ./ASACICD; ls
 
+        - name: Caching build SA files
+          uses: actions/cache@v2
+          env:
+           cache-name: cashed-SAJob
+          with:
+           path: ./ASACICD/SAJobTemplate.json
+           key: ${{ runner.os }}-build
+
+
 
   terraform:
     name: 'Terraform'
@@ -45,7 +54,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform
+       # working-directory: ./terraform
 
 
     steps:
@@ -60,11 +69,11 @@ jobs:
 
 # Check that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt 
+      run: terraform fmt -check
 
 # Initializes the Terraform working directory
     - name: Terraform Init
-      run: terraform init
+      run: terraform init -d ./terraform
 
     - name: Print LS
       run: ls
