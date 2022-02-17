@@ -54,7 +54,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform
+        #working-directory: ./terraform
 
 
     steps:
@@ -66,11 +66,11 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: SAJobTemplate.json
-        path: ./build
+        path: /build
 
     - name: Display structure of downloaded files
       run: ls -R
-      working-directory: ./build
+      working-directory: /build
 
 # Setup Terraform
     - name: Setup Terraform
@@ -78,11 +78,11 @@ jobs:
 
 # Check that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
-      run: terraform fmt -check
+      run: terraform -chdir=terraform/ fmt -check
 
 # Initializes the Terraform working directory
     - name: Terraform Init
-      run: terraform init
+      run: terraform -chdir=terraform/ init
 
     - name: Print current directory
       run: pwd
@@ -99,13 +99,13 @@ jobs:
 
 # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform -chdir=terraform/ plan
 
     - name: Terraform Validate
       id: validate
-      run: terraform validate -no-color
+      run: terraform -chdir=terraform/ validate -no-color
 
 # On push to main, build or change infrastructure according to the Terraform configuration files and the Terraform plan
-#    - name: Terraform Apply
-#      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-#      run: terraform apply -auto-approve
+    #- name: Terraform Apply
+     # if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      #run: terraform -chdir=terraform/ apply -auto-approve
