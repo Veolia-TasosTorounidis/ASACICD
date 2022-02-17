@@ -1,0 +1,56 @@
+name: Cleanup
+
+on: workflow_dispatch
+
+jobs:
+
+  destroy_workspace:
+    name: 'Destroy terraform deployment'
+    runs-on: ubuntu-latest
+    env:
+        ARM_SUBSCRIPTION_ID: ${{ secrets.ARM_SUBSCRIPTION_ID }}
+        ARM_TENANT_ID: ${{ secrets.ARM_TENANT_ID }}
+        ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
+        ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
+
+# Use the Bash shell by default
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform
+
+
+    steps:
+# Checkout the repository to the GitHub Actions runner
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Retrieve SA template
+      uses: actions/download-artifact@v2
+      with:
+        name: SAJobTemplate.json
+        path: ./terraform/build
+
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: ./terraform/build
+
+# Setup Terraform
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v1
+
+# Check that all Terraform configuration files adhere to a canonical format
+    - name: Terraform Format
+      run: terraform fmt -check
+
+# Initializes the Terraform working directory
+    - name: Terraform Init
+      run: terraform init
+
+# Generates an execution plan for Terraform
+    - name: Terraform Plan
+      run: terraform plan -destroy
+
+# On push to main, build or change infrastructure according to the Terraform configuration files and the Terraform plan
+    - name: Terraform Apply
+      run: terraform apply -destroy -auto-approve
