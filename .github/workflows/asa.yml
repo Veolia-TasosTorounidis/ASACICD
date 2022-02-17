@@ -71,6 +71,7 @@ jobs:
     - name: Display structure of downloaded files
       run: ls -R
       working-directory: ./build
+
 # Setup Terraform
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
@@ -83,11 +84,8 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
-    - name: Print LS
-      run: ls
-
-    - name: Print CD ./build LS
-      run: cd /build; ls
+    - name: Print current directory
+      run: pwd
 
     - name: Print CD.. ./ASACICD LS
       run: cd ..; cd ./ASACICD; ls
