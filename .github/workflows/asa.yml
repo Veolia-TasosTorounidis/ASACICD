@@ -83,8 +83,12 @@ jobs:
     - name: Print LS
       run: ls
 
-    - name: Print CD LS
+    - name: Print CD.. LS
+      run: cd ..; ls
+
+    - name: Print CD.. ./ASACICD LS
       run: cd ..; cd ./ASACICD; ls
+
 # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
