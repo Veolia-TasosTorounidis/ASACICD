@@ -22,6 +22,7 @@ data "azurerm_cosmosdb_account" "cosdb" {
 
 # Define ARM deployment template for the Azure Stream Analytics deployment
 resource "azurerm_resource_group_template_deployment" "azure_stream_analytics" {
+  depends_on = [azurerm_resource_group.rgsa]
   name                = "azure_stream_analytics"
   resource_group_name = azurerm_resource_group.rgsa.name
   deployment_mode     = "Incremental"
@@ -83,4 +84,5 @@ resource "azurerm_resource_group_template_deployment" "azure_stream_analytics" {
   })
 
   template_content = file("${path.module}/build/ASACICD.JobTemplate.json")
+
 }
