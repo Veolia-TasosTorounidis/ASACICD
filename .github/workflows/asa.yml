@@ -5,7 +5,7 @@ on:
     branches:
     - main
     paths-ignore:
-    - '.github/'
+    - '**.yml'
 jobs:
   SAbuild:
     name: 'Build and test Stream analytics job'
