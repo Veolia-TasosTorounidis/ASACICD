@@ -25,10 +25,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Retrieve SA template
-      uses: actions/download-artifact@v2
+    - name: Retrieve SA ARM template from Azure
+    - uses: fixpoint/azblob-download-artifact@v3
       with:
-        name: SAJobTemplate.json
+        connection-string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+        name: sajobbuild
         path: ./terraform/build
 
     - name: Display structure of downloaded files
