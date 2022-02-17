@@ -1,1 +1,5 @@
-﻿select * into output from input
+﻿select 
+i.*,
+i.timestamp as PK 
+into output 
+from input as i
