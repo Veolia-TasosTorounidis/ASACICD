@@ -33,7 +33,7 @@ jobs:
         - name: Uploading build SA job
           uses: actions/upload-artifact@v2
           with:
-           name: buildSAJob
+           name: SAJobTemplate.json
            path: ./ASACICD/SAJobTemplate.json
            if-no-files-found: error
 
@@ -65,8 +65,8 @@ jobs:
     - name: Retrieve SA template
       uses: actions/download-artifact@v2
       with:
-        name: buildSAJob
-        path: ~/ASACICD/SAJobTemplate.json
+        name: SAJobTemplate.json
+        path: ./build
 
 # Setup Terraform
     - name: Setup Terraform
@@ -83,8 +83,8 @@ jobs:
     - name: Print LS
       run: ls
 
-    - name: Print CD.. LS
-      run: cd ..; ls
+    - name: Print CD ./build LS
+      run: cd ./build; ls
 
     - name: Print CD.. ./ASACICD LS
       run: cd ..; cd ./ASACICD; ls
