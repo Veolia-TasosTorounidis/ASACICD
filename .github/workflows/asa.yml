@@ -67,7 +67,7 @@ jobs:
       run: terraform init
 
     - name: Print LS
-      run: cd..; cd ./ASACICD; ls
+      run: cd; cd ./ASACICD; ls
 # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: terraform plan
